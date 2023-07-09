@@ -18,7 +18,6 @@ class FloydWarshallRecursive:
 
         Args:
             graph (List[List[float]]): The adjacency matrix representation of the graph.
-            nV (int): The number of vertices in the graph.
 
         Returns:
             List[List[float]]: A 2D matrix representing the shortest distances between 
@@ -36,10 +35,9 @@ class FloydWarshallRecursive:
             vertices using intermediate vertices.
 
             Args:
-                dist (List[List[float]]): The current matrix of shortest distances.
-                k (int): The intermediate vertex index to consider.
                 sV (int): The index of the starting vertex.
                 eV (int): The index of the ending vertex.
+                k (int): The intermediate vertex index to consider.
 
             Returns:
                 float: The shortest distance between the starting vertex and the ending 
