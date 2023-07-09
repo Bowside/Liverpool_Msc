@@ -26,10 +26,11 @@ class FloydWarshallRecursive:
         """
 
         # Detect the number of vertices in the graph
+        dist = graph
         nV = len(graph)
         self.vertex_count = nV
 
-        def iterator(dist, k, sV, eV):
+        def iterator(sV, eV, k):
             """
             Recursive iterator function to calculate the shortest distance between two 
             vertices using intermediate vertices.
@@ -46,21 +47,18 @@ class FloydWarshallRecursive:
             """
 
             if k == -1:
+                # Return weight when there are no intermediary vertices
+                # This is when k == -1 since index 0 is first vertex
                 return dist[sV][eV]
             else:
-                return min(iterator(dist, k-1, sV, eV), 
-                           iterator(dist, k-1, sV, k) + iterator(dist, k-1, k, eV))
-
-        dist = [[self.inf] * nV for _ in range(nV)]
-
-        for sV in range(nV):
-            for eV in range(nV):
-                dist[sV][eV] = graph[sV][eV]
+                # If travelling via k is shorter return shorter distance
+                return min(iterator(sV, eV, k - 1),
+                           iterator(sV, k, k - 1) + iterator(k, eV, k - 1))
 
         for k in range(nV):
-            for sV in range( nV):
+            for sV in range(nV):
                 for eV in range(nV):
-                    dist[sV][eV] = iterator(dist, k, sV, eV)
+                    dist[sV][eV] = iterator(sV, eV, k)
 
         return dist
 
