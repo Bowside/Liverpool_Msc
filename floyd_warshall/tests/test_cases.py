@@ -10,29 +10,53 @@ Date: 2023-07-05
 # Use value for infinity to denote edges that do not exist
 INF = float('INF')
 
-# Test A: Simple Graph (Three Vertices)
-test_a = [[0, 1, INF],
-            [1, 0, 3],
-            [INF, 3, 0]]
+# Test A: Simple Graph (Four Vertices)
+test_a = [[0, 1, INF, 1],
+          [1, 0, 1, INF],
+          [INF, 1, 0, 1],
+          [1, INF, 1, 0]]
 
-result_a = [[0, 1, 4],
-            [1, 0, 3],
-            [4, 3, 0]]
+result_a = [[0, 1, 2, 1],
+            [1, 0, 1, 2],
+            [2, 1, 0, 1],
+            [1, 2, 1, 0]]
 
-# Test B: Simple Graph, Negative Edges Graph (No Negative Cycles)
-test_b = [[0, 1, -2, INF],
-            [1, 0, INF, 3],
-            [2, INF, 0, INF],
-            [INF, -3, INF, 0]]
+# Test B: Negative Edges Graph, no negative cycles (Four Vertices)
+test_b = [[0, INF, 9, INF],
+            [INF, 0, INF, INF],
+            [INF, -5, 0, 8],
+            [-3, 2, INF, 0]]
 
-result_b = [[0, 1, -2, 4],
-            [1, 0, -1, 3],
-            [2, 3, 0, 6],
-            [-2, -3, -4, 0]]
+result_b = [[0, 4, 9, 17],
+            [INF, 0, INF, INF],
+            [5, -5, 0, 8],
+            [-3, 1, 6, 0]]
 
+# Test C: Disconnected Verticies Graph (Four Vertices)
+test_c = [[0, 1, INF, INF],
+          [1, 0, INF, INF],
+          [INF, INF, 0, 1],
+          [INF, INF, 1, 0]]
 
-# Test C: Large Graph (Eight Vertices)
-test_c = [[0, 8, INF, INF, 5, 3, INF, INF],
+result_c = [[0, 1, INF, INF],
+            [1, 0, INF, INF],
+            [INF, INF, 0, 1],
+            [INF, INF, 1, 0]]
+
+# Test D: Negative Cycle Graph (Four Vertices)
+# This should fail as the graph contains a negative cycle
+test_d = [[0, 1, INF, 1],
+          [1, 0, 1, INF],
+          [INF, 1, 0, -2],
+          [1, INF, -2, 0]]
+
+result_d = [[0, -1, -2, -3],
+            [1, 0, -1, -2],
+            [-2, -1, 0, -1],
+            [-1, -2, -1, 0]]
+
+# Test E: Large Graph (Eight Vertices)
+test_e = [[0, 8, INF, INF, 5, 3, INF, INF],
             [INF, 0, INF, 11, 5, INF, 9, INF],
             [7, 4, 0, INF, INF, 4, INF, INF],
             [INF, INF, INF, 0, 1, INF, INF, 2],
@@ -41,7 +65,7 @@ test_c = [[0, 8, INF, INF, 5, 3, INF, INF],
             [INF, INF, INF, 3, INF, INF, 0, 12],
             [INF, INF, INF, INF, INF, INF, INF, 0]]
 
-result_c = [[0 ,8 ,INF ,19 ,5 ,3 ,17 ,21],
+result_e = [[0 ,8 ,INF ,19 ,5 ,3 ,17 ,21],
             [INF ,0 ,INF ,11 ,5 ,INF ,9 ,13],
             [7 ,4 ,0 ,15 ,9 ,4 ,13 ,17],
             [INF ,INF ,INF ,0 ,1 ,INF ,INF ,2],
@@ -50,8 +74,8 @@ result_c = [[0 ,8 ,INF ,19 ,5 ,3 ,17 ,21],
             [INF ,INF ,INF ,3 ,4 ,INF ,0 ,5],
             [INF ,INF ,INF ,INF ,INF ,INF ,INF ,0]]
 
-# Test D: Very Large Graph (Sixteen Vertices)
-test_d = [[0, 8, INF, INF, 5, 3, INF, INF, 2, INF, 4, INF, INF, 6, INF, 1],
+# Test F: Very Large Graph (Sixteen Vertices)
+test_f = [[0, 8, INF, INF, 5, 3, INF, INF, 2, INF, 4, INF, INF, 6, INF, 1],
           [INF, 0, INF, 11, INF, INF, 9, INF, INF, 6, INF, INF, INF, INF, 7, INF],
           [INF, INF, 0, INF, 3, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF],
           [4, INF, 7, 0, INF, INF, INF, 5, INF, INF, 6, 2, INF, INF, INF, INF],
@@ -68,7 +92,7 @@ test_d = [[0, 8, INF, INF, 5, 3, INF, INF, 2, INF, 4, INF, INF, 6, INF, 1],
           [INF, 7, 4, 3, INF, INF, 8, 12, INF, 6, INF, INF, INF, INF, 0, 12],
           [INF, 7, 4, INF, INF, INF, INF, 1, 5, 2, INF, 22, 3, 7, 9, 0]]
 
-result_d = [[0 ,6 ,5 ,6 ,5 ,3 ,11 ,2 ,2 ,3 ,4 ,4 ,4 ,6 ,3 ,1],
+result_f = [[0 ,6 ,5 ,6 ,5 ,3 ,11 ,2 ,2 ,3 ,4 ,4 ,4 ,6 ,3 ,1],
             [12 ,0 ,11 ,10 ,8 ,9 ,9 ,9 ,14 ,6 ,16 ,7 ,10 ,13 ,7 ,10],
             [7 ,7 ,0 ,13 ,3 ,10 ,16 ,9 ,9 ,7 ,11 ,8 ,8 ,13 ,10 ,8],
             [4 ,7 ,6 ,0 ,3 ,4 ,11 ,4 ,6 ,6 ,6 ,2 ,7 ,8 ,7 ,5],
