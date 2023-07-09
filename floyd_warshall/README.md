@@ -52,5 +52,9 @@ python tests/unit_tests.py
 To run the performance tests use the following in the terminal for the test_cases.py file.
 ```bash
 python tests/performance_tests.py
-``
+```
+
+## TODO
+ - Combine the two implementations into a single class
+ - Move the graph loader into its own class
 

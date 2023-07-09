@@ -4,6 +4,7 @@ between all pairs of vertices in a graph using an imperative approach.
 
 Author: Dillon Mantle
 Date: 2023-07-05
+Dapted from: https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/
 """
 class FloydWarshallImperative:
     """
@@ -53,32 +54,6 @@ class FloydWarshallImperative:
                                     )
 
             return dist
-
-    def read_graphfile(self, filename):
-        """
-        Reads a graph from a file and constructs its adjacency matrix representation.
-
-        Args:
-            filename (str): The path to the file containing the graph data.
-
-        Returns:
-            tuple: A tuple containing the adjacency matrix representation of the graph 
-                   and the number of vertices. The adjacency matrix is represented as 
-                   a 2D list, and the number of vertices is an integer.
-        """
-
-        with open(filename, 'r') as file:
-            lines = file.readlines()
-            nV, nE = map(int, lines[0].split())
-            graph = [[self.inf] * nV for _ in range(nV)]
-            for line in lines[1:]:
-                sV, eV, weight = map(int, line.split())
-                graph[sV][eV] = weight
-
-            self.vertex_count = nV
-            self.edge_count = nE
-
-            return graph
 
     def __init__(self) -> None:
         """
