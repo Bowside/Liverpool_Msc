@@ -37,13 +37,13 @@ def run_performance_tests():
     Performance tests:
         - Test A: A small test case.
         - Test E: A medium test case.
-        - Test F: An intensive test case (commented out by default).
+        - Test F: An intensive test case.
     """
     # Declartive performance tests
     cProfile.run("floyd_warshall_recursive.calc_shortest_distance(test_a)")
     cProfile.run("floyd_warshall_recursive.calc_shortest_distance(test_e)")
     # If you have time to kill, comment this in
-    cProfile.run("floyd_warshall_recursive.calc_shortest_distance(test_f)")
+    # cProfile.run("floyd_warshall_recursive.calc_shortest_distance(test_f)")
 
     # Imperative performance tests
     cProfile.run("floyd_warshall_imperative.calc_shortest_distance(test_a)")
