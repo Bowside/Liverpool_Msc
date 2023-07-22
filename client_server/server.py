@@ -14,7 +14,7 @@ def handle_data(data):
     if data_type == 'DICT':
         handle_dictionary(content)
     elif data_type == 'FILE':
-        handle_file(content.encode())
+        handle_file(content)
 
 # Function to handle received dictionary
 def handle_dictionary(content):
@@ -35,7 +35,7 @@ def handle_dictionary(content):
         print(e)
         return
     # Print or store the dictionary contents
-    print('Received dictionary:')
+    print('Received a dictionary in {messageformat}:')
     print(dictionary)
 
 # Function to parse XML data
@@ -51,7 +51,7 @@ def handle_file(content):
     # Check if the content is encrypted
     if content.startswith('ENCRYPTED'):
         # Decrypt the content
-        f = Fernet(b'your-encryption-key')
+        f = Fernet(b'hP9XQjOgbXJSOri9nSpeJ5oAXCRicT-e0hYd3tE7_ks=')
         content = f.decrypt(content[9:]).decode()
 
     # Print or store the file contents
@@ -64,14 +64,16 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
     server_socket.listen(1)
     print('Server listening on {}:{}'.format(HOST, PORT))
 
-    conn, addr = server_socket.accept()
-    print('Connected by', addr)
+    while True:  # Keep the server running in an infinite loop
+        conn, addr = server_socket.accept()
+        print('Connected by', addr)
+        print('Waiting for data...')
 
-    with conn:
-        while True:
-            data = conn.recv(1024).decode()
-            if not data:
-                break
-            handle_data(data)
+        with conn:
+            while True:
+                data = conn.recv(1024).decode()
+                if not data:
+                    break
+                handle_data(data)
 
-        print('Connection closed.')
+        print('Waiting for new connection...')
