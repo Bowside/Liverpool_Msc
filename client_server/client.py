@@ -52,7 +52,7 @@ def send_text_file():
     # Check if encryption is required
     encrypt = input('Encrypt the file content? (yes/no): ')
     if encrypt.lower() == 'yes':
-        f = Fernet(b'your-encryption-key')
+        f = Fernet(b'hP9XQjOgbXJSOri9nSpeJ5oAXCRicT-e0hYd3tE7_ks=')
         encrypted_content = f.encrypt(file_content.encode())
         data = 'FILE:ENCRYPTED{}'.format(encrypted_content.decode())
     else:

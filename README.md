@@ -5,7 +5,11 @@ Each folder will be a seprate project, with its own readme.
 
 The directory structure is as follows.
 
-└───floyd_warshall          ~ Contains the assignment on implementing the floyd-warshall algorythim iteratively
-    ├───floyd_warshall      ~ Class containing algorythm implementation
-    ├───graphs              ~ Some sample graphs
-    ├───tests               ~ Implementation tests
+└─floyd_warshall        ~ Contains the assignment on implementing the floyd-warshall algorythim iteratively
+  ├─floyd_warshall      ~ Class containing algorythm implementation
+  ├─graphs              ~ Some sample graphs
+  ├─tests               ~ Implementation tests
+
+└─client_server         ~ Contains the assignment on a client server application
+  ├─tests               ~ Implementation tests
+
