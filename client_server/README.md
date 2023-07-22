@@ -1,6 +1,5 @@
 # Client Server
 This is the end module assignment for the CSCK541 Software Development in Practice module
-
 The application is a simple client/server network that is able to:
 
  - Create a dictionary, populate it, serialize it and send it to a server.
