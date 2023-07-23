@@ -5,11 +5,36 @@ Each folder will be a seprate project, with its own readme.
 
 The directory structure is as follows.
 
-└─floyd_warshall        ~ Contains the assignment on implementing the floyd-warshall algorythim iteratively
-  ├─floyd_warshall      ~ Class containing algorythm implementation
-  ├─graphs              ~ Some sample graphs
-  ├─tests               ~ Implementation tests
 
-└─client_server         ~ Contains the assignment on a client server application
-  ├─tests               ~ Implementation tests
+|   .gitignore
+|   LICENSE
+|   README.md
+|
++---client_server
+|   |   client.py
+|   |   README.md
+|   |   requirements.txt
+|   |   server.py
+|   |
+|   \---tests
+|           __init__.py
+|
+\---floyd_warshall
+    |   README.md
+    |   requirements.txt
+    |
+    +---floyd_warshall
+    |   |   imperative.py
+    |   |   recursive.py
+    |   |   __init__.py
+    |
+    +---graphs
+    |       sample_1.txt
+    |       sample_2.txt
+    |
+    +---tests
+        |   performance_tests.py
+        |   test_cases.py
+        |   unit_tests.py
+
 

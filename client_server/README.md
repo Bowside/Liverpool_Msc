@@ -32,7 +32,11 @@ Run the client script by executing the following command:
 
 This will start the client program.
 
-The client will prompt you with options to send a dictionary or a text file to the server. Follow the prompts and enter the required information to send the data to the server.
+The client will prompt you with options to send a dictionary or a text file to the server. 
+Follow the prompts and enter the required information to send the data to the server.
+
+The server will prompt the user how they would like to consume the data received.
+
 You can run the server and client on the same machine by opening two separate terminals or command prompts and following the steps above in each terminal.
 If you want to run the server and client on different machines, make sure you update the HOST variable in both scripts with the appropriate IP address or hostname of the machine where the server is running. Additionally, you may need to adjust any firewall settings to allow communication between the machines on the specified port.
 
@@ -45,7 +49,6 @@ Remember to adjust the PORT variable in both scripts if you want to use a differ
 
 
 ## TODO
- - Enable encryption / decryption
- - Write unit tests
- - fix bugs 
+ - Unit tests
+ - Performance tests
 
