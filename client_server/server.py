@@ -7,7 +7,7 @@ from cryptography.fernet import Fernet
 HOST = 'localhost'  # Server IP address or hostname
 PORT = 12345  # Port to listen on
 
-def handle_data(data):
+def handle_data(data, action: str = 'PRINT', filename: str = ''):
     """
     Deserialize the received data and handle it based on its type.
 
@@ -19,16 +19,18 @@ def handle_data(data):
     """
     data_type, content = data.split(':', 1)
     if data_type == 'DICT':
-        handle_dictionary(content)
+        handle_dictionary(content, action, filename)
     elif data_type == 'FILE':
-        handle_file(content)
+        handle_file(content, action, filename)
 
-def handle_dictionary(content):
+def handle_dictionary(content, action, filename):
     """
     Deserialize the received dictionary based on the pickling message format and handle it.
 
     Args:
         content (str): The serialized dictionary in the format "FORMAT:SERIALIZED_DATA".
+        action (str, optional): The action to perform with the dictionary. Options: 'print', 'save'. Defaults to 'print'.
+        filename (str, optional): The name of the file to save the dictionary (if action is 'save'). Defaults to None.
 
     Returns:
         None
@@ -48,8 +50,13 @@ def handle_dictionary(content):
         print(e)
         return
 
-    print(f'Received a dictionary in {messageformat}:')
-    print(dictionary)
+    if action == 'PRINT':
+        print(f'Received a dictionary in {messageformat}:')
+        print(dictionary)
+    elif action == 'SAVE' and filename:
+        with open(filename, 'w') as file:
+            file.write(str(dictionary))
+            print(f'Dictionary saved to {filename}')
 
 def parse_xml(xml_data):
     """
@@ -67,12 +74,14 @@ def parse_xml(xml_data):
         dictionary[child.tag] = child.text
     return dictionary
 
-def handle_file(content):
+def handle_file(content, action, filename):
     """
     Handle the received file content, optionally decrypting it if encrypted.
 
     Args:
         content (str): The content of the file, with an optional "ENCRYPTED" prefix.
+        action (str, optional): The action to perform with the file content. Options: 'print', 'save'. Defaults to 'print'.
+        filename (str, optional): The name of the file to save the content (if action is 'save'). Defaults to None.
 
     Returns:
         None
@@ -81,8 +90,13 @@ def handle_file(content):
         f = Fernet(b'hP9XQjOgbXJSOri9nSpeJ5oAXCRicT-e0hYd3tE7_ks=')
         content = f.decrypt(content[9:]).decode()
 
-    print('Received file content:')
-    print(content)
+    if action == 'print':
+        print('Received file content:')
+        print(content)
+    elif action == 'save' and filename:
+        with open(filename, 'w') as file:
+            file.write(content)
+            print(f'File content saved to {filename}')
 
 # Define the escape command that will terminate the server
 ESCAPE_COMMAND = "EXIT"
@@ -100,15 +114,24 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
 
         with conn:
             while True:
-                data = conn.recv(1024).decode()
+                data = conn.recv(2048).decode()
                 if not data:
                     break
 
                 # Check for the escape command
                 if data.strip() == ESCAPE_COMMAND:
                     print("Escape command received. Closing the connection.")
-                    break
-
-                handle_data(data)
+                    exit()
+                
+                # Ask user whether to print or save the data
+                action = input("(P)rint or (S)ave the data?")
+                if action.upper()[0] == 'P':
+                    handle_data(data)
+                # Cannot use an elif here because the filename does not get asked for?
+                elif action.upper()[0] == 'S':
+                    filename = input("Enter the filename to save the data: ")
+                    handle_data(data, action='SAVE', filename=filename)
+                else:
+                    print("Invalid action. Please try again.")
 
         print('Waiting for new connection...')
