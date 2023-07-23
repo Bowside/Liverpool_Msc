@@ -28,16 +28,16 @@ def send_dictionary():
     Returns:
         None
     """
-    dictionary = {'Name': 'Dillon', 'Name': 'Lester', 'Name': 'Yasmin'}
+    dictionary = {'Developer': 'Dillon', 'Tester': 'Lester', 'Project manager': 'Yasmin'}
 
     messageformat = input('Enter the pickling messageformat - (B)inary, (J)SON, or (X)ML:')
-    if messageformat.upper() == 'BINARY' or 'B':
+    if messageformat.upper() == 'B':
         messageformat = 'BINARY'
         serialized_dict = str(pickle.dumps(dictionary), 'Latin-1')
-    elif messageformat.upper() == 'JSON' or 'J':
+    elif messageformat.upper() == 'J':
         messageformat = 'JSON'
         serialized_dict = json.dumps(dictionary)
-    elif messageformat.upper() == 'XML' or 'X':
+    elif messageformat.upper() == 'X':
         messageformat = 'XML'
         serialized_dict = serialize_xml(dictionary)
     else:
@@ -96,8 +96,8 @@ while True:
     option = input('Enter 1 to send a dictionary or 2 to send a text file (0 to exit):')
     if option == '0':
         send_exit()
-        break
-    if option == '1':
+        exit()
+    elif option == '1':
         send_dictionary()
     elif option == '2':
         send_text_file()
