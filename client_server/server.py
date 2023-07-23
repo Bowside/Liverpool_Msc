@@ -7,22 +7,35 @@ from cryptography.fernet import Fernet
 HOST = 'localhost'  # Server IP address or hostname
 PORT = 12345  # Port to listen on
 
-# Function to handle received data
 def handle_data(data):
-    # Deserialize the data and handle based on its type
+    """
+    Deserialize the received data and handle it based on its type.
+
+    Args:
+        data (str): The data received in the format "TYPE:CONTENT".
+
+    Returns:
+        None
+    """
     data_type, content = data.split(':', 1)
     if data_type == 'DICT':
         handle_dictionary(content)
     elif data_type == 'FILE':
         handle_file(content)
 
-# Function to handle received dictionary
 def handle_dictionary(content):
-    # Deserialize the dictionary based on the pickling messageformat
+    """
+    Deserialize the received dictionary based on the pickling message format and handle it.
+
+    Args:
+        content (str): The serialized dictionary in the format "FORMAT:SERIALIZED_DATA".
+
+    Returns:
+        None
+    """
     try:
         messageformat, serialized_dict = content.split(':', 1)
         if messageformat == 'BINARY':
-            # we need to convert the string back to bytes otherwise pickle has a wobbly
             dictionary = pickle.loads(bytes(serialized_dict, 'latin-1'))
         elif messageformat == 'JSON':
             dictionary = json.loads(serialized_dict)
@@ -34,29 +47,45 @@ def handle_dictionary(content):
     except Exception as e:
         print(e)
         return
-    # Print or store the dictionary contents
-    print('Received a dictionary in {messageformat}:')
+
+    print(f'Received a dictionary in {messageformat}:')
     print(dictionary)
 
-# Function to parse XML data
 def parse_xml(xml_data):
+    """
+    Parse XML data and convert it to a dictionary.
+
+    Args:
+        xml_data (str): The XML data to be parsed.
+
+    Returns:
+        dict: The dictionary obtained from the parsed XML data.
+    """
     root = ET.fromstring(xml_data)
     dictionary = {}
     for child in root:
         dictionary[child.tag] = child.text
     return dictionary
 
-# Function to handle received text file
 def handle_file(content):
-    # Check if the content is encrypted
+    """
+    Handle the received file content, optionally decrypting it if encrypted.
+
+    Args:
+        content (str): The content of the file, with an optional "ENCRYPTED" prefix.
+
+    Returns:
+        None
+    """
     if content.startswith('ENCRYPTED'):
-        # Decrypt the content
         f = Fernet(b'hP9XQjOgbXJSOri9nSpeJ5oAXCRicT-e0hYd3tE7_ks=')
         content = f.decrypt(content[9:]).decode()
 
-    # Print or store the file contents
     print('Received file content:')
     print(content)
+
+# Define the escape command that will terminate the server
+ESCAPE_COMMAND = "EXIT"
 
 # Start the server
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
@@ -74,6 +103,12 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
                 data = conn.recv(1024).decode()
                 if not data:
                     break
+
+                # Check for the escape command
+                if data.strip() == ESCAPE_COMMAND:
+                    print("Escape command received. Closing the connection.")
+                    break
+
                 handle_data(data)
 
         print('Waiting for new connection...')
