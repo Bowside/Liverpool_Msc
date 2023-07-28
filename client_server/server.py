@@ -72,6 +72,7 @@ def parse_xml(xml_data):
     dictionary = {}
     for child in root:
         dictionary[child.tag] = child.text
+        
     return dictionary
 
 def handle_file(content, action, filename):
@@ -98,40 +99,42 @@ def handle_file(content, action, filename):
             file.write(content)
             print(f'File content saved to {filename}')
 
-# Define the escape command that will terminate the server
-ESCAPE_COMMAND = "EXIT"
+if __name__ == '__main__':
+    #Main program
+    # Define the escape command that will terminate the server
+    ESCAPE_COMMAND = "EXIT"
 
-# Start the server
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
-    server_socket.bind((HOST, PORT))
-    server_socket.listen(1)
-    print('Server listening on {}:{}'.format(HOST, PORT))
+    # Start the server
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
+        server_socket.bind((HOST, PORT))
+        server_socket.listen(1)
+        print('Server listening on {}:{}'.format(HOST, PORT))
 
-    while True:  # Keep the server running in an infinite loop
-        conn, addr = server_socket.accept()
-        print('Connected by', addr)
-        print('Waiting for data...')
+        while True:  # Keep the server running in an infinite loop
+            conn, addr = server_socket.accept()
+            print('Connected by', addr)
+            print('Waiting for data...')
 
-        with conn:
-            while True:
-                data = conn.recv(2048).decode()
-                if not data:
-                    break
+            with conn:
+                while True:
+                    data = conn.recv(2048).decode()
+                    if not data:
+                        break
 
-                # Check for the escape command
-                if data.strip() == ESCAPE_COMMAND:
-                    print("Escape command received. Closing the connection.")
-                    exit()
-                
-                # Ask user whether to print or save the data
-                action = input("(P)rint or (S)ave the data?")
-                if action.upper()[0] == 'P':
-                    handle_data(data)
-                # Cannot use an elif here because the filename does not get asked for?
-                elif action.upper()[0] == 'S':
-                    filename = input("Enter the filename to save the data: ")
-                    handle_data(data, action='SAVE', filename=filename)
-                else:
-                    print("Invalid action. Please try again.")
+                    # Check for the escape command
+                    if data.strip() == ESCAPE_COMMAND:
+                        print("Escape command received. Closing the connection.")
+                        exit()
+                    
+                    # Ask user whether to print or save the data
+                    action = input("(P)rint or (S)ave the data?")
+                    if action.upper()[0] == 'P':
+                        handle_data(data)
+                    # Cannot use an elif here because the filename does not get asked for?
+                    elif action.upper()[0] == 'S':
+                        filename = input("Enter the filename to save the data: ")
+                        handle_data(data, action='SAVE', filename=filename)
+                    else:
+                        print("Invalid action. Please try again.")
 
-        print('Waiting for new connection...')
+            print('Waiting for new connection...')
