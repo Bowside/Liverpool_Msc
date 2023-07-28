@@ -28,7 +28,7 @@ def send_dictionary():
     Returns:
         None
     """
-    dictionary = {'Developer': 'Dillon', 'Tester': 'Lester', 'Project manager': 'Yasmin'}
+    dictionary = {'Developer': 'Dillon', 'Tester': 'Lester', 'ProjectManager': 'Yasmin'}
 
     messageformat = input('Enter the pickling messageformat - (B)inary, (J)SON, or (X)ML:')
     if messageformat.upper() == 'B':
@@ -81,8 +81,8 @@ def send_text_file():
     """
     file_content = input('Enter the content of the text file: ')
 
-    encrypt = input('Encrypt the file content? (yes/no): ')
-    if encrypt.upper() == 'YES' or 'Y':
+    encrypt = input('Encrypt the file content? (Y) or (N): ')
+    if encrypt.upper() == 'Y':
         f = Fernet(b'hP9XQjOgbXJSOri9nSpeJ5oAXCRicT-e0hYd3tE7_ks=')
         encrypted_content = f.encrypt(file_content.encode())
         data = 'FILE:ENCRYPTED{}'.format(encrypted_content.decode())
@@ -91,15 +91,16 @@ def send_text_file():
 
     send_data(data)
 
-# Main program
-while True:
-    option = input('Enter 1 to send a dictionary or 2 to send a text file (0 to exit):')
-    if option == '0':
-        send_exit()
-        exit()
-    elif option == '1':
-        send_dictionary()
-    elif option == '2':
-        send_text_file()
-    else:
-        print('Invalid option. Please try again.')
+if __name__ == '__main__':
+    #Main program
+    while True:
+        option = input('Enter 1 to send a dictionary or 2 to send a text file (0 to exit):')
+        if option == '0':
+            send_exit()
+            exit()
+        elif option == '1':
+            send_dictionary()
+        elif option == '2':
+            send_text_file()
+        else:
+            print('Invalid option. Please try again.')
