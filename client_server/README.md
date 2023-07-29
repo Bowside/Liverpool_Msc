@@ -44,11 +44,12 @@ Remember to adjust the PORT variable in both scripts if you want to use a differ
 
 ## Running Unit Tests
 
+There are two unit tests, one for the server app and one for the client app.
+To run them, navigate to the tests folder and run the folloiwng
+
+`python -m unittest test_client.py`
+`python -m unittest test_server.py`
 
 ## Running Performance Tests
 
-
-## TODO
- - Unit tests
- - Performance tests
 
