@@ -1,0 +1,161 @@
+Pollutant,Feature,K-Score,P-value
+pm2.5 tyre wear,VKM 2019 - HGVs - Articulated - 3 to 4 Axles,2507873.164970772,0.0
+pm2.5 tyre wear,VKM Diesel PHV,2411931.5605616537,0.0
+pm2.5 tyre wear,VKM Electric Car,2357863.4710503463,0.0
+pm2.5 tyre wear,VKM Petrol LGV,2015124.644074387,0.0
+pm2.5 tyre wear,VKM 2019 - HGVs - Rigid - 4 or more Axles,1988014.3574363862,0.0
+pm2.5 tyre wear,VKM 2019 - HGVs - Rigid - 2 Axles,332860.233890966,0.0
+pm2.5 tyre wear,VKM Diesel LGV,295768.99973258027,0.0
+pm2.5 tyre wear,VKM 2019 - HGVs - Rigid - 3 Axles,289975.0756894517,0.0
+pm2.5 tyre wear,VKM Petrol Car,62635.67483715474,0.0
+pm2.5 tyre wear,AADT 2019 - HGVs - Articulated - 6 Axles,20439.59100477279,0.0
+pm2.5 tyre wear,AADT Electric Car,18657.45746705721,0.0
+pm2.5 tyre wear,AADT Petrol LGV,18465.787198554288,0.0
+pm2.5 tyre wear,AADT 2019 - HGVs - Articulated - 5 Axles,14292.820958183394,0.0
+pm2.5 tyre wear,AADT Diesel LGV,13285.046586014947,0.0
+pm2.5 tyre wear,AADT 2019 - HGVs - Rigid - 3 Axles,6895.059166861282,0.0
+pm2.5 tyre wear,VKM Diesel Car,5249.314611971929,0.0
+pm2.5 tyre wear,AADT 2019 - HGVs - Rigid - 2 Axles,4183.449128810491,0.0
+pm2.5 tyre wear,AADT 2019 - HGVs - Articulated - 3 to 4 Axles,3907.5845530079173,0.0
+pm2.5 tyre wear,AADT Petrol Car,1066.4787803342101,5.385365826291179e-232
+pm2.5 tyre wear,AADT Diesel Car,6.166001733414267,0.013025421786236765
+pm2.5 exhaust,VKM 2019 - HGVs - Articulated - 3 to 4 Axles,1881971.4469260732,0.0
+pm2.5 exhaust,VKM Diesel PHV,1791681.1939775113,0.0
+pm2.5 exhaust,VKM Electric Car,1762205.713840981,0.0
+pm2.5 exhaust,VKM 2019 - HGVs - Rigid - 4 or more Axles,1565015.4419463086,0.0
+pm2.5 exhaust,VKM Petrol LGV,1551530.9230470522,0.0
+pm2.5 exhaust,VKM 2019 - HGVs - Rigid - 2 Axles,281058.0128450851,0.0
+pm2.5 exhaust,VKM Diesel LGV,255241.6478201704,0.0
+pm2.5 exhaust,VKM 2019 - HGVs - Rigid - 3 Axles,251064.0649323203,0.0
+pm2.5 exhaust,VKM Petrol Car,66580.54450217725,0.0
+pm2.5 exhaust,AADT 2019 - HGVs - Articulated - 6 Axles,19902.83958669155,0.0
+pm2.5 exhaust,AADT Electric Car,17865.490319289496,0.0
+pm2.5 exhaust,AADT Petrol LGV,17694.1048713986,0.0
+pm2.5 exhaust,AADT 2019 - HGVs - Articulated - 5 Axles,14029.68553860438,0.0
+pm2.5 exhaust,AADT Diesel LGV,12850.19090734734,0.0
+pm2.5 exhaust,AADT 2019 - HGVs - Rigid - 3 Axles,6751.506408194936,0.0
+pm2.5 exhaust,VKM Diesel Car,6084.832917903211,0.0
+pm2.5 exhaust,AADT 2019 - HGVs - Rigid - 2 Axles,4171.217573710132,0.0
+pm2.5 exhaust,AADT 2019 - HGVs - Articulated - 3 to 4 Axles,3908.137163430914,0.0
+pm2.5 exhaust,AADT Petrol Car,1173.6018829059203,7.119854330047198e-255
+pm2.5 exhaust,AADT Diesel Car,28.053045546213674,1.1842711784283915e-07
+pm2.5 brake wear,VKM Motorcycle,141539.21690935118,0.0
+pm2.5 brake wear,VKM Petrol LGV,82593.1983889553,0.0
+pm2.5 brake wear,VKM Electric Car,72384.29618273907,0.0
+pm2.5 brake wear,VKM Diesel Car,71511.37830523388,0.0
+pm2.5 brake wear,VKM 2019 - HGVs - Rigid - 4 or more Axles,69168.42035283968,0.0
+pm2.5 brake wear,VKM 2019 - Coaches,63372.42061969954,0.0
+pm2.5 brake wear,VKM Diesel LGV,56087.30914928437,0.0
+pm2.5 brake wear,VKM 2019 - HGVs - Rigid - 2 Axles,55868.66698331939,0.0
+pm2.5 brake wear,VKM Electric LGV,53487.89618417356,0.0
+pm2.5 brake wear,AADT 2019 - HGVs - Articulated - 6 Axles,21827.24663036972,0.0
+pm2.5 brake wear,AADT Petrol LGV,20463.329400609175,0.0
+pm2.5 brake wear,AADT Electric Car,20399.505619923388,0.0
+pm2.5 brake wear,AADT 2019 - HGVs - Articulated - 3 to 4 Axles,17210.998995682807,0.0
+pm2.5 brake wear,AADT Diesel LGV,17191.10352096246,0.0
+pm2.5 brake wear,VKM Petrol Car,16570.555233194806,0.0
+pm2.5 brake wear,AADT 2019 - HGVs - Rigid - 3 Axles,7402.391227685757,0.0
+pm2.5 brake wear,AADT 2019 - HGVs - Rigid - 2 Axles,5028.5905582057,0.0
+pm2.5 brake wear,AADT 2019 - HGVs - Rigid - 4 or more Axles,4709.467361786159,0.0
+pm2.5 brake wear,AADT Petrol Car,4558.464523682525,0.0
+pm2.5 brake wear,AADT Diesel Car,223.5419877855597,1.8612522058187483e-50
+pm10 tyre wear,VKM 2019 - HGVs - Articulated - 3 to 4 Axles,2507873.1649707025,0.0
+pm10 tyre wear,VKM Diesel PHV,2411931.5605616537,0.0
+pm10 tyre wear,VKM Electric Car,2357863.4710503463,0.0
+pm10 tyre wear,VKM Petrol LGV,2015124.644074402,0.0
+pm10 tyre wear,VKM 2019 - HGVs - Rigid - 4 or more Axles,1988014.3574363715,0.0
+pm10 tyre wear,VKM 2019 - HGVs - Rigid - 2 Axles,332860.2338909679,0.0
+pm10 tyre wear,VKM Diesel LGV,295768.9997325798,0.0
+pm10 tyre wear,VKM 2019 - HGVs - Rigid - 3 Axles,289975.0756894525,0.0
+pm10 tyre wear,VKM Petrol Car,62635.67483715481,0.0
+pm10 tyre wear,AADT 2019 - HGVs - Articulated - 6 Axles,20439.59100477279,0.0
+pm10 tyre wear,AADT Electric Car,18657.457467057233,0.0
+pm10 tyre wear,AADT Petrol LGV,18465.787198554295,0.0
+pm10 tyre wear,AADT 2019 - HGVs - Articulated - 5 Axles,14292.820958183393,0.0
+pm10 tyre wear,AADT Diesel LGV,13285.046586014947,0.0
+pm10 tyre wear,AADT 2019 - HGVs - Rigid - 3 Axles,6895.059166861282,0.0
+pm10 tyre wear,VKM Diesel Car,5249.314611971934,0.0
+pm10 tyre wear,AADT 2019 - HGVs - Rigid - 2 Axles,4183.449128810494,0.0
+pm10 tyre wear,AADT 2019 - HGVs - Articulated - 3 to 4 Axles,3907.584553007919,0.0
+pm10 tyre wear,AADT Petrol Car,1066.4787803342101,5.385365826291179e-232
+pm10 tyre wear,AADT Diesel Car,6.1660017334142605,0.013025421786236765
+pm10 exhaust,VKM 2019 - HGVs - Articulated - 3 to 4 Axles,1881971.4469260469,0.0
+pm10 exhaust,VKM Diesel PHV,1791681.1939774752,0.0
+pm10 exhaust,VKM Electric Car,1762205.7138409342,0.0
+pm10 exhaust,VKM 2019 - HGVs - Rigid - 4 or more Axles,1565015.4419463086,0.0
+pm10 exhaust,VKM Petrol LGV,1551530.923047043,0.0
+pm10 exhaust,VKM 2019 - HGVs - Rigid - 2 Axles,281058.012845086,0.0
+pm10 exhaust,VKM Diesel LGV,255241.6478201704,0.0
+pm10 exhaust,VKM 2019 - HGVs - Rigid - 3 Axles,251064.0649323203,0.0
+pm10 exhaust,VKM Petrol Car,66580.54450217714,0.0
+pm10 exhaust,AADT 2019 - HGVs - Articulated - 6 Axles,19902.83958669154,0.0
+pm10 exhaust,AADT Electric Car,17865.4903192895,0.0
+pm10 exhaust,AADT Petrol LGV,17694.104871398584,0.0
+pm10 exhaust,AADT 2019 - HGVs - Articulated - 5 Axles,14029.685538604368,0.0
+pm10 exhaust,AADT Diesel LGV,12850.190907347327,0.0
+pm10 exhaust,AADT 2019 - HGVs - Rigid - 3 Axles,6751.506408194936,0.0
+pm10 exhaust,VKM Diesel Car,6084.8329179032135,0.0
+pm10 exhaust,AADT 2019 - HGVs - Rigid - 2 Axles,4171.217573710131,0.0
+pm10 exhaust,AADT 2019 - HGVs - Articulated - 3 to 4 Axles,3908.13716343091,0.0
+pm10 exhaust,AADT Petrol Car,1173.6018829059199,7.119854330047198e-255
+pm10 exhaust,AADT Diesel Car,28.05304554621362,1.1842711784283915e-07
+pm10 brake wear,VKM Motorcycle,141539.216909351,0.0
+pm10 brake wear,VKM Petrol LGV,82593.19838895538,0.0
+pm10 brake wear,VKM Electric Car,72384.296182739,0.0
+pm10 brake wear,VKM Diesel Car,71511.37830523377,0.0
+pm10 brake wear,VKM 2019 - HGVs - Rigid - 4 or more Axles,69168.4203528396,0.0
+pm10 brake wear,VKM 2019 - Coaches,63372.4206196995,0.0
+pm10 brake wear,VKM Diesel LGV,56087.30914928449,0.0
+pm10 brake wear,VKM 2019 - HGVs - Rigid - 2 Axles,55868.66698331939,0.0
+pm10 brake wear,VKM Electric LGV,53487.8961841735,0.0
+pm10 brake wear,AADT 2019 - HGVs - Articulated - 6 Axles,21827.24663036972,0.0
+pm10 brake wear,AADT Petrol LGV,20463.329400609207,0.0
+pm10 brake wear,AADT Electric Car,20399.50561992338,0.0
+pm10 brake wear,AADT 2019 - HGVs - Articulated - 3 to 4 Axles,17210.998995682792,0.0
+pm10 brake wear,AADT Diesel LGV,17191.103520962446,0.0
+pm10 brake wear,VKM Petrol Car,16570.555233194813,0.0
+pm10 brake wear,AADT 2019 - HGVs - Rigid - 3 Axles,7402.391227685762,0.0
+pm10 brake wear,AADT 2019 - HGVs - Rigid - 2 Axles,5028.590558205698,0.0
+pm10 brake wear,AADT 2019 - HGVs - Rigid - 4 or more Axles,4709.467361786161,0.0
+pm10 brake wear,AADT Petrol Car,4558.464523682525,0.0
+pm10 brake wear,AADT Diesel Car,223.54198778555977,1.8612522058187483e-50
+nox,VKM 2019 - HGVs - Articulated - 3 to 4 Axles,2369567.53227441,0.0
+nox,VKM 2019 - HGVs - Rigid - 4 or more Axles,1896829.4888951029,0.0
+nox,VKM Diesel PHV,1873036.631914094,0.0
+nox,VKM Electric Car,1840182.4330472886,0.0
+nox,VKM Petrol LGV,1617790.1994906983,0.0
+nox,VKM 2019 - HGVs - Rigid - 2 Axles,315067.0242948691,0.0
+nox,VKM Diesel LGV,284775.168057351,0.0
+nox,VKM 2019 - HGVs - Rigid - 3 Axles,280015.409042426,0.0
+nox,VKM Petrol Car,58612.968636480786,0.0
+nox,AADT 2019 - HGVs - Articulated - 6 Axles,19704.89520674086,0.0
+nox,AADT Electric Car,17254.06177352126,0.0
+nox,AADT Petrol LGV,17109.469590382992,0.0
+nox,AADT 2019 - HGVs - Articulated - 5 Axles,14045.630295525782,0.0
+nox,AADT Diesel LGV,12619.311164956256,0.0
+nox,AADT 2019 - HGVs - Rigid - 3 Axles,7078.009815990481,0.0
+nox,VKM Diesel Car,5563.389156640577,0.0
+nox,AADT 2019 - HGVs - Rigid - 2 Axles,4437.438964749284,0.0
+nox,AADT 2019 - HGVs - Articulated - 3 to 4 Axles,4168.143266773183,0.0
+nox,AADT Petrol Car,1152.2509079333659,2.566337537797459e-250
+nox,AADT Diesel Car,42.29472012361785,7.908478672256009e-11
+co2,VKM 2019 - HGVs - Articulated - 6 Axles,1886873.2841305898,0.0
+co2,VKM 2019 - HGVs - Articulated - 5 Axles,1414924.4028435566,0.0
+co2,VKM Petrol LGV,1257985.1802140845,0.0
+co2,VKM Electric Car,1254106.3966934772,0.0
+co2,VKM Diesel LGV,1026601.5763690984,0.0
+co2,VKM 2019 - HGVs - Rigid - 3 Axles,290973.1396163971,0.0
+co2,VKM 2019 - HGVs - Rigid - 2 Axles,258740.4581317841,0.0
+co2,VKM 2019 - HGVs - Articulated - 3 to 4 Axles,254451.15133408213,0.0
+co2,VKM Petrol Car,45392.0709038295,0.0
+co2,AADT 2019 - HGVs - Articulated - 6 Axles,17642.265066345837,0.0
+co2,AADT Electric Car,15512.327839352361,0.0
+co2,AADT Petrol LGV,15362.843693270712,0.0
+co2,AADT 2019 - HGVs - Articulated - 5 Axles,12479.855827216164,0.0
+co2,AADT Diesel LGV,11197.802213057355,0.0
+co2,AADT 2019 - HGVs - Rigid - 3 Axles,6397.862954763722,0.0
+co2,VKM Diesel Car,3975.8103369161663,0.0
+co2,AADT 2019 - HGVs - Rigid - 2 Axles,3958.895917554615,0.0
+co2,AADT 2019 - HGVs - Articulated - 3 to 4 Axles,3715.0614092064175,0.0
+co2,AADT Petrol Car,818.5282321252963,6.953354524290639e-179
+co2,AADT Diesel Car,14.252026801005243,0.00016003396350457738
