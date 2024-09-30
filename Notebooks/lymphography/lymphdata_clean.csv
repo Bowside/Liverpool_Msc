@@ -1,0 +1,149 @@
+class,no. of nodes in,lym.nodes dimin,regeneration of,special forms,block of affere,changes in stru,lym.nodes enlar,early uptake in,exclusion of no
+malign lymph,10-19,0-3,no,no,yes,faint,5-8,yes,yes
+metastases,10-19,0-3,no,chalices,yes,coarse,9-12,yes,yes
+malign lymph,60-69,0-3,yes,vesicles,yes,faint,>=13,yes,yes
+malign lymph,50-59,0-3,no,vesicles,no,coarse,9-12,yes,yes
+metastases,0-9,0-3,no,no,no,diluted,5-8,no,yes
+metastases,30-39,0-3,no,vesicles,no,reticular,9-12,yes,yes
+metastases,0-9,0-3,no,chalices,yes,faint,5-8,yes,no
+metastases,0-9,0-3,no,vesicles,yes,no,5-8,yes,no
+malign lymph,40-49,0-3,no,vesicles,yes,faint,9-12,yes,yes
+malign lymph,10-19,0-3,no,vesicles,no,diluted,5-8,yes,no
+metastases,20-29,0-3,no,no,yes,diluted,9-12,yes,yes
+metastases,10-19,0-3,no,vesicles,yes,faint,9-12,no,yes
+metastases,0-9,0-3,no,chalices,yes,drop-like,5-8,yes,no
+malign lymph,10-19,0-3,no,vesicles,no,stripped,>=13,yes,yes
+fibrosis,30-39,8-11,yes,no,yes,faint,1-4,yes,yes
+metastases,10-19,0-3,no,vesicles,yes,diluted,5-8,yes,yes
+metastases,20-29,0-3,no,chalices,yes,grainy,5-8,yes,yes
+metastases,10-19,0-3,no,chalices,yes,diluted,5-8,no,yes
+metastases,0-9,0-3,no,no,no,grainy,5-8,yes,yes
+metastases,0-9,0-3,no,chalices,yes,grainy,9-12,yes,no
+malign lymph,20-29,0-3,no,vesicles,no,coarse,5-8,yes,yes
+malign lymph,30-39,0-3,no,vesicles,no,diluted,9-12,yes,yes
+metastases,10-19,0-3,no,chalices,yes,coarse,>=13,yes,yes
+metastases,0-9,0-3,no,no,yes,diluted,5-8,yes,no
+malign lymph,>=70,4-7,no,vesicles,no,faint,1-4,yes,yes
+malign lymph,10-19,0-3,no,vesicles,no,faint,9-12,no,yes
+malign lymph,30-39,0-3,no,vesicles,no,coarse,9-12,yes,yes
+malign lymph,0-9,0-3,no,vesicles,no,faint,9-12,yes,yes
+metastases,0-9,0-3,no,chalices,yes,drop-like,5-8,yes,yes
+malign lymph,0-9,0-3,no,chalices,no,faint,5-8,no,yes
+malign lymph,20-29,0-3,no,vesicles,yes,stripped,>=13,yes,yes
+malign lymph,20-29,0-3,no,vesicles,no,faint,9-12,yes,yes
+metastases,0-9,0-3,no,no,no,faint,5-8,no,no
+metastases,0-9,0-3,no,no,yes,drop-like,1-4,no,no
+metastases,10-19,0-3,no,vesicles,yes,coarse,9-12,yes,yes
+metastases,10-19,0-3,no,vesicles,yes,faint,9-12,yes,yes
+fibrosis,30-39,8-11,yes,vesicles,no,diluted,1-4,no,yes
+malign lymph,50-59,0-3,no,vesicles,no,coarse,>=13,yes,yes
+malign lymph,10-19,0-3,no,vesicles,no,coarse,9-12,yes,yes
+malign lymph,10-19,0-3,no,no,no,stripped,5-8,yes,yes
+malign lymph,0-9,0-3,no,vesicles,no,drop-like,5-8,yes,yes
+malign lymph,50-59,0-3,yes,vesicles,yes,coarse,>=13,yes,yes
+metastases,10-19,0-3,no,vesicles,yes,coarse,9-12,no,yes
+metastases,20-29,0-3,no,chalices,yes,grainy,9-12,yes,yes
+fibrosis,60-69,4-7,yes,vesicles,yes,coarse,5-8,no,yes
+malign lymph,0-9,0-3,no,chalices,no,faint,5-8,yes,yes
+metastases,0-9,0-3,no,vesicles,yes,faint,5-8,yes,yes
+metastases,0-9,4-7,no,no,no,faint,1-4,no,yes
+metastases,10-19,0-3,no,chalices,yes,diluted,5-8,no,yes
+metastases,10-19,0-3,no,chalices,yes,faint,5-8,yes,yes
+metastases,0-9,0-3,no,no,no,drop-like,1-4,no,yes
+malign lymph,20-29,0-3,no,vesicles,yes,faint,5-8,yes,yes
+metastases,0-9,0-3,yes,chalices,no,diluted,5-8,no,yes
+metastases,0-9,0-3,no,vesicles,yes,coarse,9-12,no,no
+metastases,0-9,0-3,no,chalices,yes,coarse,5-8,no,yes
+malign lymph,0-9,0-3,no,vesicles,no,drop-like,5-8,yes,no
+malign lymph,30-39,0-3,no,vesicles,no,faint,9-12,yes,yes
+metastases,30-39,0-3,no,vesicles,yes,grainy,5-8,yes,yes
+malign lymph,>=70,0-3,yes,vesicles,yes,stripped,>=13,yes,yes
+metastases,10-19,0-3,no,vesicles,yes,faint,9-12,yes,yes
+malign lymph,60-69,0-3,no,vesicles,no,stripped,>=13,yes,yes
+metastases,0-9,0-3,no,no,yes,coarse,9-12,yes,yes
+malign lymph,20-29,0-3,no,vesicles,no,grainy,>=13,yes,yes
+metastases,0-9,0-3,no,chalices,yes,grainy,5-8,no,no
+metastases,0-9,0-3,no,chalices,yes,diluted,5-8,no,yes
+malign lymph,60-69,0-3,yes,vesicles,no,diluted,9-12,yes,yes
+malign lymph,40-49,0-3,no,vesicles,no,diluted,>=13,yes,yes
+metastases,20-29,0-3,no,chalices,yes,coarse,9-12,no,yes
+malign lymph,0-9,0-3,no,chalices,no,drop-like,5-8,no,no
+malign lymph,50-59,0-3,no,vesicles,no,reticular,9-12,yes,yes
+metastases,0-9,0-3,no,vesicles,yes,coarse,9-12,yes,yes
+malign lymph,10-19,0-3,no,no,no,diluted,5-8,no,yes
+metastases,20-29,0-3,no,vesicles,yes,drop-like,1-4,no,yes
+malign lymph,20-29,0-3,no,vesicles,no,diluted,>=13,yes,yes
+malign lymph,0-9,0-3,no,no,no,drop-like,5-8,no,no
+metastases,20-29,0-3,no,chalices,yes,faint,9-12,yes,yes
+metastases,10-19,0-3,no,chalices,yes,drop-like,5-8,yes,yes
+metastases,0-9,0-3,no,vesicles,no,diluted,5-8,yes,no
+normal find,0-9,0-3,no,no,no,no,1-4,no,no
+malign lymph,20-29,0-3,no,vesicles,yes,faint,9-12,yes,yes
+malign lymph,10-19,0-3,no,vesicles,yes,faint,9-12,yes,yes
+metastases,0-9,0-3,no,chalices,yes,coarse,>=13,no,no
+malign lymph,40-49,0-3,no,vesicles,no,faint,9-12,yes,yes
+malign lymph,40-49,0-3,yes,vesicles,yes,diluted,9-12,yes,yes
+malign lymph,10-19,0-3,no,vesicles,no,diluted,>=13,yes,yes
+metastases,0-9,0-3,no,vesicles,yes,faint,5-8,no,yes
+metastases,0-9,0-3,no,chalices,yes,diluted,5-8,yes,yes
+metastases,0-9,0-3,no,vesicles,yes,faint,5-8,yes,yes
+malign lymph,10-19,0-3,no,vesicles,yes,faint,9-12,yes,yes
+metastases,0-9,0-3,no,no,no,faint,9-12,yes,no
+malign lymph,10-19,0-3,no,no,yes,drop-like,1-4,yes,yes
+metastases,0-9,0-3,no,chalices,yes,drop-like,5-8,no,no
+metastases,0-9,0-3,no,chalices,yes,grainy,5-8,yes,no
+metastases,0-9,0-3,no,no,no,drop-like,1-4,no,yes
+malign lymph,40-49,0-3,no,vesicles,no,coarse,9-12,yes,yes
+malign lymph,20-29,0-3,no,vesicles,no,faint,5-8,yes,yes
+metastases,10-19,0-3,no,vesicles,yes,drop-like,5-8,no,no
+metastases,10-19,0-3,no,chalices,yes,coarse,5-8,yes,no
+metastases,0-9,0-3,no,no,yes,diluted,5-8,no,no
+metastases,10-19,0-3,no,no,yes,coarse,5-8,no,yes
+malign lymph,20-29,0-3,no,vesicles,no,faint,9-12,yes,yes
+metastases,10-19,0-3,no,vesicles,yes,grainy,5-8,yes,yes
+metastases,10-19,0-3,no,no,no,coarse,5-8,yes,no
+metastases,20-29,0-3,no,no,yes,grainy,5-8,no,yes
+metastases,10-19,0-3,no,chalices,no,coarse,9-12,yes,yes
+malign lymph,40-49,0-3,no,vesicles,yes,stripped,>=13,yes,yes
+metastases,0-9,0-3,no,chalices,yes,faint,5-8,yes,yes
+malign lymph,60-69,0-3,no,vesicles,yes,faint,>=13,yes,yes
+metastases,0-9,0-3,no,no,yes,coarse,5-8,no,no
+metastases,0-9,0-3,no,vesicles,yes,diluted,5-8,yes,yes
+metastases,0-9,0-3,no,vesicles,no,faint,5-8,no,no
+malign lymph,40-49,0-3,no,vesicles,no,drop-like,>=13,yes,yes
+metastases,0-9,0-3,no,no,no,faint,5-8,no,no
+malign lymph,10-19,0-3,no,chalices,no,faint,5-8,yes,yes
+malign lymph,0-9,0-3,no,vesicles,no,grainy,5-8,yes,no
+malign lymph,0-9,0-3,no,chalices,no,faint,5-8,yes,yes
+malign lymph,0-9,0-3,no,chalices,no,drop-like,9-12,yes,no
+metastases,10-19,0-3,no,vesicles,yes,faint,5-8,yes,yes
+malign lymph,40-49,0-3,no,vesicles,no,coarse,9-12,yes,yes
+malign lymph,20-29,0-3,no,vesicles,yes,diluted,9-12,yes,yes
+metastases,10-19,0-3,no,chalices,no,faint,1-4,no,yes
+metastases,0-9,0-3,no,chalices,no,faint,5-8,no,yes
+metastases,20-29,0-3,no,chalices,yes,faint,5-8,no,yes
+metastases,10-19,0-3,no,vesicles,no,coarse,5-8,no,yes
+metastases,0-9,0-3,no,chalices,yes,diluted,5-8,no,yes
+malign lymph,60-69,0-3,no,vesicles,no,coarse,>=13,yes,yes
+metastases,0-9,0-3,no,chalices,yes,drop-like,9-12,yes,yes
+metastases,0-9,0-3,no,chalices,yes,coarse,5-8,yes,yes
+malign lymph,10-19,0-3,no,no,no,faint,5-8,yes,yes
+metastases,10-19,0-3,no,chalices,yes,coarse,9-12,yes,yes
+metastases,30-39,0-3,no,chalices,yes,faint,>=13,yes,yes
+malign lymph,50-59,0-3,no,vesicles,yes,stripped,>=13,yes,yes
+malign lymph,50-59,0-3,no,vesicles,no,faint,>=13,yes,yes
+metastases,0-9,0-3,no,chalices,yes,diluted,5-8,yes,no
+metastases,0-9,0-3,no,vesicles,yes,diluted,5-8,yes,yes
+metastases,60-69,0-3,no,vesicles,yes,coarse,5-8,yes,yes
+normal find,10-19,0-3,no,no,no,grainy,5-8,yes,no
+malign lymph,50-59,0-3,no,vesicles,no,coarse,9-12,yes,yes
+metastases,0-9,0-3,no,vesicles,yes,drop-like,5-8,no,yes
+fibrosis,60-69,8-11,yes,vesicles,no,diluted,1-4,no,no
+metastases,0-9,0-3,no,chalices,yes,grainy,5-8,no,yes
+malign lymph,10-19,0-3,no,chalices,no,faint,5-8,yes,yes
+metastases,0-9,0-3,no,vesicles,yes,diluted,5-8,yes,yes
+malign lymph,30-39,0-3,no,chalices,yes,diluted,5-8,yes,yes
+metastases,0-9,0-3,no,no,no,drop-like,1-4,no,yes
+malign lymph,30-39,0-3,no,vesicles,yes,faint,9-12,yes,yes
+metastases,0-9,0-3,no,no,no,grainy,5-8,yes,yes
+metastases,50-59,0-3,no,vesicles,yes,coarse,9-12,yes,yes
